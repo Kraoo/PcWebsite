@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: myfont2;
+    src: url(Glitch\ inside.otf);
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(Knewave-Regular.ttf);
+}
+
+html,
+body {
+    background-color: white;
+    background: url(https://media.giphy.com/media/dSVOojSTyDXwKiBqDZ/giphy.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#top-bar {
+    display: grid;
+    grid-template-columns: 200px 250px 1fr 130px 50px;
+    grid-template-rows: 80px;
+    grid-template-areas: " . . Overclock Checkout Shoppingcart";
+}
+
+h1 {
+    font-family: myfont;
+    font-size: 3rem;
+    overflow: auto;
+    grid-area: Overclock;
+}
+
+.buttons {
+    grid-area: Checkout;
+}
+
+#checkout-button {
+    padding: 10px;
+    font-family: myfont2;
+    font-size: 17px;
+    background: transparent;
+    border: transparent;
+    justify-self: right;
+    align-self: center;
+    grid-area: Checkout;
+}
+
+#shoppingcart {
+    height: 40px;
+    width: 40px;
+    justify-self: left;
+    align-self: center;
+    grid-area: Shoppingcart;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 12%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-family: myfont2;
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: grey;
+    border-radius: 1rem;
+}
