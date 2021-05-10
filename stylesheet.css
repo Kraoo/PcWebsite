@@ -15,8 +15,16 @@
 html,
 body {
     background-color: white;
-    background: url(https://media.giphy.com/media/dSVOojSTyDXwKiBqDZ/giphy.gif) no-repeat center center fixed;
+    background: url(https://media.giphy.com/media/UYBDCJjwOd9Re/giphy.gif) no-repeat center center fixed;
     background-size: cover;
+}
+
+#myvideo {
+    width: 24%;
+    height: 27%;
+    float: right;
+    border: thin black 5px;
+    border-radius: 10%;
 }
 
 #top-bar {
@@ -28,6 +36,7 @@ body {
 
 h1 {
     font-family: myfont;
+    color: lightblue;
     font-size: 3rem;
     overflow: auto;
     grid-area: Overclock;
@@ -41,6 +50,7 @@ h1 {
     padding: 10px;
     font-family: myfont2;
     font-size: 17px;
+    color: lightblue;
     background: transparent;
     border: transparent;
     justify-self: right;
@@ -74,21 +84,95 @@ li a {
 }
 
 a:link {
-    color: black;
+    color: lightblue;
     text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    color: lightblue;
     text-decoration: none;
 }
 
 a:active {
-    color: black;
+    color: lightblue;
     text-decoration: none;
 }
 
 a:hover {
-    background-color: grey;
+    background-color: mediumpurple;
     border-radius: 1rem;
+}
+
+#catalog {
+    color: lightblue;
+    font-family: myfont;
+    display: grid;
+    grid-template-columns: 200px 800px 200px;
+    grid-template-rows: 165px;
+    grid-template-areas: "blank text";
+}
+
+.Build-selector {
+    align-self: flex-end;
+    justify-self: center;
+    font-size: 2rem;
+    grid-area: text;
+}
+
+#catalog-images {
+    display: grid;
+    grid-template-columns: 200px 300px 280px 300px;
+    grid-template-rows: 220px;
+    grid-template-areas: ". intel amd laptop";
+    padding: 10px;
+}
+
+.intel {
+    height: 200px;
+    width: auto;
+    grid-area: intel;
+}
+
+.amd {
+    height: 200px;
+    align-self: center;
+    grid-area: amd;
+}
+
+.laptop {
+    height: 200px;
+    grid-area: laptop;
+}
+
+#catalog-buttons {
+    display: grid;
+    grid-template-columns: 180px 300px 280px 300px;
+    grid-template-areas: ". intelbttn amdbttn laptopbttn";
+}
+
+.intel-bttn {
+    background: transparent;
+    border: none;
+    font-family: myfont;
+    font-size: 18px;
+    color: lightblue;
+    grid-area: intelbttn;
+}
+
+.amd-bttn {
+    background: transparent;
+    border: none;
+    font-family: myfont;
+    font-size: 18px;
+    color: lightblue;
+    grid-area: amdbttn;
+}
+
+.laptop-bttn {
+    background: transparent;
+    border: none;
+    font-family: myfont;
+    font-size: 18px;
+    color: lightblue;
+    grid-area: laptopbttn;
 }
